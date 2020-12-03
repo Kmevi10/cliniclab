@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:wght@300;700&display=swap");
+.card {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  margin: 4% auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover .thumb img {
+  width: 120%;
+  margin: -15% 0 0 -10%;
+}
+
+.card:hover .copy {
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1.6rem 0.8rem 0.8rem;
+}
+
+.card .thumb {
+  position: absolute;
+  z-index: -10;
+}
+
+.card .thumb img {
+  width: 100%;
+  margin: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.card .copy {
+  position: absolute;
+  top: auto;
+  bottom: -4.8rem;
+  left: 0;
+  right: 0;
+  padding: 1rem 0.8rem;
+  border-radius: 12px 12px 0 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.card .copy .label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #eee;
+  background-color: black;
+  display: inline;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.card .copy .title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: black;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card .copy .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
